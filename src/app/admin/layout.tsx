@@ -27,13 +27,16 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
 
   useEffect(() => {
     if (isLoginPage) {
-      setLoading(false);
-      return;
+      // Defer state update to avoid cascading renders
+      const id = requestAnimationFrame(() => setLoading(false));
+      return () => cancelAnimationFrame(id);
     }
+
+    const controller = new AbortController();
 
     const fetchUser = async () => {
       try {
-        const response = await fetch('/api/auth/me');
+        const response = await fetch('/api/auth/me', { signal: controller.signal });
         if (response.ok) {
           const data = await response.json();
           setUser(data.user);
@@ -41,13 +44,16 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
           router.push('/admin/login');
         }
       } catch {
-        router.push('/admin/login');
+        if (!controller.signal.aborted) {
+          router.push('/admin/login');
+        }
       } finally {
         setLoading(false);
       }
     };
 
     fetchUser();
+    return () => controller.abort();
   }, [isLoginPage, router]);
 
   if (isLoginPage) {

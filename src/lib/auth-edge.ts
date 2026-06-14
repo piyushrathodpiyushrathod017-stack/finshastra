@@ -67,15 +67,15 @@ async function verifyJWT(token: string, secret: string): Promise<JWTPayload | nu
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const getJwt = () => require('jsonwebtoken');
+
 export function generateAccessToken(payload: JWTPayload): string {
-  // Server-side only (uses Node.js)
-  const jwt = require('jsonwebtoken');
-  return jwt.sign(payload, JWT_SECRET, { expiresIn: '15m' });
+  return getJwt().sign(payload, JWT_SECRET, { expiresIn: '15m' });
 }
 
 export function generateRefreshToken(payload: JWTPayload): string {
-  const jwt = require('jsonwebtoken');
-  return jwt.sign(payload, JWT_REFRESH_SECRET, { expiresIn: '7d' });
+  return getJwt().sign(payload, JWT_REFRESH_SECRET, { expiresIn: '7d' });
 }
 
 export async function generateAccessTokenEdge(payload: JWTPayload): Promise<string> {
@@ -88,8 +88,7 @@ export async function generateRefreshTokenEdge(payload: JWTPayload): Promise<str
 
 export function verifyAccessToken(token: string): JWTPayload | null {
   try {
-    const jwt = require('jsonwebtoken');
-    return jwt.verify(token, JWT_SECRET) as JWTPayload;
+    return getJwt().verify(token, JWT_SECRET) as JWTPayload;
   } catch {
     return null;
   }
@@ -97,8 +96,7 @@ export function verifyAccessToken(token: string): JWTPayload | null {
 
 export function verifyRefreshToken(token: string): JWTPayload | null {
   try {
-    const jwt = require('jsonwebtoken');
-    return jwt.verify(token, JWT_REFRESH_SECRET) as JWTPayload;
+    return getJwt().verify(token, JWT_REFRESH_SECRET) as JWTPayload;
   } catch {
     return null;
   }
