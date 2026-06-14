@@ -1,0 +1,163 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - link "FinShastra" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - navigation "Main navigation" [ref=e7]:
+          - button "Credit Score" [ref=e9]:
+            - text: Credit Score
+            - img [ref=e10]
+          - button "Personal Loan" [ref=e13]:
+            - text: Personal Loan
+            - img [ref=e14]
+          - button "Credit Cards" [ref=e17]:
+            - text: Credit Cards
+            - img [ref=e18]
+      - button "Search" [ref=e21]:
+        - img [ref=e22]
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e30]: FS
+        - heading "Sign in to Admin" [level=2] [ref=e31]
+        - paragraph [ref=e32]: FinShastra Administration Panel
+      - generic [ref=e33]:
+        - generic [ref=e130]: Internal server error
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - text: Email address
+            - textbox "Email address" [ref=e37]:
+              - /placeholder: admin@finshatra.com
+              - text: piyush1111@gmail.com
+          - generic [ref=e38]:
+            - text: Password
+            - textbox "Password" [ref=e40]:
+              - /placeholder: Enter your password
+              - text: piyush@172762008
+        - button "Sign in" [ref=e41]
+  - contentinfo [ref=e42]:
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - heading "Credit Score" [level=3] [ref=e46]
+          - list [ref=e47]:
+            - listitem [ref=e48]:
+              - link "What is Credit Score?" [ref=e49] [cursor=pointer]:
+                - /url: /credit-score/what-is-credit-score
+            - listitem [ref=e50]:
+              - link "Check Credit Score Free" [ref=e51] [cursor=pointer]:
+                - /url: /credit-score/free-check
+            - listitem [ref=e52]:
+              - link "Improve Credit Score" [ref=e53] [cursor=pointer]:
+                - /url: /credit-score/improve
+            - listitem [ref=e54]:
+              - link "CIBIL Score" [ref=e55] [cursor=pointer]:
+                - /url: /credit-score/cibil-score
+            - listitem [ref=e56]:
+              - link "Credit Score Range" [ref=e57] [cursor=pointer]:
+                - /url: /credit-score/range
+            - listitem [ref=e58]:
+              - link "Credit Score Factors" [ref=e59] [cursor=pointer]:
+                - /url: /credit-score/factors
+        - generic [ref=e60]:
+          - heading "Personal Loan" [level=3] [ref=e61]
+          - list [ref=e62]:
+            - listitem [ref=e63]:
+              - link "Personal Loan Guide" [ref=e64] [cursor=pointer]:
+                - /url: /personal-loan/guide
+            - listitem [ref=e65]:
+              - link "Best Personal Loan Rates" [ref=e66] [cursor=pointer]:
+                - /url: /personal-loan/best-rates
+            - listitem [ref=e67]:
+              - link "Personal Loan Eligibility" [ref=e68] [cursor=pointer]:
+                - /url: /personal-loan/eligibility
+            - listitem [ref=e69]:
+              - link "Personal Loan EMI Calculator" [ref=e70] [cursor=pointer]:
+                - /url: /personal-loan/emi-calculator
+            - listitem [ref=e71]:
+              - link "Documents Required" [ref=e72] [cursor=pointer]:
+                - /url: /personal-loan/documents
+            - listitem [ref=e73]:
+              - link "Top Banks" [ref=e74] [cursor=pointer]:
+                - /url: /personal-loan/top-banks
+        - generic [ref=e75]:
+          - heading "Credit Cards" [level=3] [ref=e76]
+          - list [ref=e77]:
+            - listitem [ref=e78]:
+              - link "Best Credit Cards" [ref=e79] [cursor=pointer]:
+                - /url: /credit-cards/best
+            - listitem [ref=e80]:
+              - link "Credit Card Comparison" [ref=e81] [cursor=pointer]:
+                - /url: /credit-cards/compare
+            - listitem [ref=e82]:
+              - link "Cashback Cards" [ref=e83] [cursor=pointer]:
+                - /url: /credit-cards/cashback
+            - listitem [ref=e84]:
+              - link "Travel Cards" [ref=e85] [cursor=pointer]:
+                - /url: /credit-cards/travel
+            - listitem [ref=e86]:
+              - link "Reward Cards" [ref=e87] [cursor=pointer]:
+                - /url: /credit-cards/rewards
+            - listitem [ref=e88]:
+              - link "Credit Card Fees" [ref=e89] [cursor=pointer]:
+                - /url: /credit-cards/fees
+        - generic [ref=e90]:
+          - heading "Company" [level=3] [ref=e91]
+          - list [ref=e92]:
+            - listitem [ref=e93]:
+              - link "About Us" [ref=e94] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e95]:
+              - link "Editorial Policy" [ref=e96] [cursor=pointer]:
+                - /url: /editorial-policy
+            - listitem [ref=e97]:
+              - link "Affiliate Disclosure" [ref=e98] [cursor=pointer]:
+                - /url: /affiliate-disclosure
+            - listitem [ref=e99]:
+              - link "Contact Us" [ref=e100] [cursor=pointer]:
+                - /url: /contact
+      - generic [ref=e101]:
+        - link "twitter" [ref=e102] [cursor=pointer]:
+          - /url: https://twitter.com/finshastra
+          - generic [ref=e103]: twitter
+          - text: twitter
+        - link "linkedin" [ref=e104] [cursor=pointer]:
+          - /url: https://linkedin.com/company/finshastra
+          - generic [ref=e105]: linkedin
+          - text: linkedin
+        - link "facebook" [ref=e106] [cursor=pointer]:
+          - /url: https://facebook.com/finshastra
+          - generic [ref=e107]: facebook
+          - text: facebook
+        - link "youtube" [ref=e108] [cursor=pointer]:
+          - /url: https://youtube.com/@finshastra
+          - generic [ref=e109]: youtube
+          - text: youtube
+        - link "instagram" [ref=e110] [cursor=pointer]:
+          - /url: https://instagram.com/finshastra
+          - generic [ref=e111]: instagram
+          - text: instagram
+      - generic [ref=e112]:
+        - paragraph [ref=e113]:
+          - text: © 2026 FinShastra. All rights reserved. |
+          - link "Privacy Policy" [ref=e114] [cursor=pointer]:
+            - /url: /privacy
+          - text: "|"
+          - link "Terms" [ref=e115] [cursor=pointer]:
+            - /url: /terms
+          - text: "|"
+          - link "Disclaimer" [ref=e116] [cursor=pointer]:
+            - /url: /disclaimer
+          - text: "|"
+          - link "Affiliate Disclosure" [ref=e117] [cursor=pointer]:
+            - /url: /affiliate-disclosure
+          - text: "|"
+          - link "Editorial Policy" [ref=e118] [cursor=pointer]:
+            - /url: /editorial-policy
+        - paragraph [ref=e119]: Built with trust. Not financial advice.
+  - button "Open Next.js Dev Tools" [ref=e125] [cursor=pointer]:
+    - img [ref=e126]
+  - alert [ref=e129]
